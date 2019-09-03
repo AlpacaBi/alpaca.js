@@ -73,3 +73,32 @@
 </script>
 </html>
 ```
+
+
+
+### 当然我也发布在了npm上
+如果你用的是webpack工程化项目，你只需要执行
+
+ `npm install alpaca.js`
+
+然后在js
+```
+var Alpaca = require("alpacajs")
+
+new Alpaca({
+    el: '#app',
+    data: {
+        msg: 'Alpaca',
+        num: 0,
+    },
+    methods: {
+        add: function () {
+            this.num = this.num +1;
+        },
+        del: function () {
+            this.num = this.num -1;
+        }
+    }
+});
+```
+也可以生效
