@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alpaca.js</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <h1>alpaca.js,一个类（copy）vue的mvvm框架</h1><br/>
+
+        <h2>双向绑定:alpaca-model</h2>
+        <input alpaca-model="msg">
+        <span>{{msg}}</span>
+
+        <br/>
+
+        <h2>事件绑定:alpaca-on</h2>
+        <button alpaca-on:click="del">-</button>
+        <span>{{num}}</span>
+        <button alpaca-on:click="add">+</button>
+
+    </div>
+</body>
+
+<script src="js/alpaca.js"></script>
+<script type="text/javascript">
+
+     new Alpaca({
+        el: '#app',
+        data: {
+            msg: 'Alpaca',
+            num: 0,
+        },
+        methods: {
+            add: function () {
+                this.num = this.num +1;
+            },
+            del: function () {
+                this.num = this.num -1;
+            }
+        }
+    });
+
+</script>
+</html>
