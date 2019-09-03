@@ -79,7 +79,7 @@
 ### 当然我也发布在了npm上
 如果你用的是webpack工程化项目，你只需要执行
 
- `npm install alpaca.js`
+ `npm install alpacajs`
 
 然后在js
 ```
