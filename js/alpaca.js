@@ -1,4 +1,4 @@
-//Observer-----------------------------
+//Observer------------------------------
 function Observer(data) {
     this.data = data;
     this.walk(data);
